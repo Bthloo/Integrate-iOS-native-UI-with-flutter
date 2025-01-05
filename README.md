@@ -1,16 +1,24 @@
-# integrate_flutter_with_ios_native_ui
+# Flutter and SwiftUI Integration
 
-A new Flutter project.
+This project demonstrates how to integrate Flutter into a SwiftUI project.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Post Feed**: Displays a list of posts with a username, post content and post view.
+- **Like Button**: Toggle the "like" status of a post and update the like count.
 
-A few resources to get you started if this is your first Flutter project:
+## Requirements
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **iOS 13.0+**
+- **Swift 5.0+**
+- **Xcode 12.0+**
+- **macOS 11.0+**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## API
+
+The app interacts with a dummy RESTful API that mimics the functionalities of a backend for fetching posts.
+You can get the data from the [DummyJSON API](https://dummyjson.com/).
+
+## Screenshots
+
+![Post Feed]()

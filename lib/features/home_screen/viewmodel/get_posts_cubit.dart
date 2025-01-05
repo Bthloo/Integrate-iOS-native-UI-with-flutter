@@ -1,10 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:meta/meta.dart';
-
 import '../../../core/api_manager/api_manager.dart';
 import '../../../core/models/post_model.dart';
-
 part 'get_posts_state.dart';
 
 class GetPostsCubit extends Cubit<GetPostsState> {
