@@ -9,14 +9,14 @@ class SwiftUIViewFactory: NSObject, FlutterPlatformViewFactory {
            self.messenger = messenger
            super.init()
        }
-    
+
     
     func create(
         withFrame frame: CGRect,
         viewIdentifier viewId: Int64,
         arguments args: Any?
     ) -> FlutterPlatformView {
-        print("Received text from Flutter: \(args ?? "jj")")
+        print("Received text from Flutter: \(args ?? "null")")
         
         let arguments = args as? [String: Any]
         print("Received text from Flutter: \(String(describing: arguments))")
@@ -28,7 +28,16 @@ class SwiftUIViewFactory: NSObject, FlutterPlatformViewFactory {
             let userName = postData["userName"] as? String ?? "Unknown"
             let profileImage = postData["profileImage"] as? String ?? "person.fill"
             let postText = postData["postText"] as? String ?? "No text"
-            return PostModel(userName: userName, profileImage: profileImage, postText: postText)
+            let likesCount = postData["likesCount"] as? Int ?? 0
+            let views = postData["views"] as? Int ?? 0
+
+            return PostModel(
+                userName: userName,
+                profileImage: profileImage,
+                postText: postText,
+                likesCount:likesCount,
+                views: views
+            )
             
             
         }
