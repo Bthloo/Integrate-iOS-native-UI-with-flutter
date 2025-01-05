@@ -21,4 +21,5 @@ You can get the data from the [DummyJSON API](https://dummyjson.com/).
 
 ## Screenshots
 
-![Post Feed]()
+![Post Feed](https://github.com/user-attachments/assets/fb093cb6-36f8-4482-82d7-cbc2ed53af8b)
+
